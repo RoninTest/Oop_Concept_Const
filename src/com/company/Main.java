@@ -22,6 +22,12 @@ public class Main {
         NormalUser normalUser=new NormalUser(name,surname,age);
         FirstUser firstUser=new FirstUser(paymentType);
 
+        GoldUser goldUser1=new GoldUser(name,surname,age);
+        goldUser1.setCountry("Turkey");
+        System.out.println("Gold User - 1 Country "+ name + " " + surname + " : " + goldUser1.getCountry());
+
+        goldUser1.Address("Turkey","Istanbul","Ataturk",32);
+
 
     }
 
